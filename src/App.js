@@ -2,15 +2,15 @@ import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
-import About from './components/About';
+/*import About from './components/About';*/
 
 function App() {
   return (
     <>
 <Navbar title="TextUtils"  aboutText="About us"></Navbar>
 <div className="container">
-{/*<TextForm heading = "Enter your text:"></TextForm>*/}
-<About></About>
+<TextForm heading = "Enter your text:"></TextForm>
+{/*<About></About>*/}
 </div>
       </>
   );
