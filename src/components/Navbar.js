@@ -1,5 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+
 export default function Navbar(props) 
 {
   return (
@@ -32,11 +33,15 @@ export default function Navbar(props)
           <a className="nav-link disabled" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <div className={`form-check form-switch text-${props.mode==='light'?'dark' : 'light'}`}>
-  <input className="form-check-input" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
-  <label className="form-check-label" htmlfor="switchCheckDefault">Enable Dark Mode</label>
+  <div className={`form-check form-switch text-${props.mode==='light'?'dark' : 'light'}`}>
+  <input className="form-check-input mx-1" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>
+  <label className="form-check-label" htmlFor="switchCheckDefault">Enable Dark Mode</label>
+  </div>
+  <div className={`form-check form-switch text-${props.mode==='light'?'dark' : 'light'}`}>
+  <input className="form-check-input mx-1" onClick={props.toggleBarbieMode} type="checkbox" role="switch" id="switchCheckBarbie"/>
+  <label className="form-check-label" htmlFor="switchCheckBarbie">Enable Barbie Mode</label>
 </div>
-    </div>
+  </div>
   </div>
 </nav>
   )
