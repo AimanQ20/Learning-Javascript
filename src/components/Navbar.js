@@ -29,9 +29,6 @@ export default function Navbar(props)
             <li><a className="dropdown-item" href="/">Something else here</a></li>
           </ul>
         </li>
-        <li className="nav-item">
-          <a className="nav-link disabled" aria-disabled="true">Disabled</a>
-        </li>
       </ul>
   <div className={`form-check form-switch text-${props.mode==='light'?'dark' : 'light'}`}>
   <input className="form-check-input mx-1" onClick={props.toggleMode} type="checkbox" role="switch" id="switchCheckDefault"/>

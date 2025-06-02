@@ -29,7 +29,7 @@ function App() {
     if(mode==='light')
     {
     setMode('dark')
-    document.body.style.backgroundColor = 'midnightblue';
+    document.body.style.backgroundColor = '#042743';
     showAlert("Dark mode set","success");
     }
     else{
@@ -41,7 +41,7 @@ function App() {
  const toggleBarbieMode = () => {
   if (mode !== 'barbie') {
     setMode('barbie');
-    document.body.style.backgroundColor = 'pink';
+    document.body.style.backgroundColor = '#aa0f58';
     showAlert("Barbie mode enabled", "success");
   } else {
     setMode('light'); // or 'dark' based on your preference
@@ -58,7 +58,7 @@ function App() {
   <Alert alert={alert} />
   <div className="container my-2">
     <Routes>
-      <Route exact path="/about" element={<About />} />
+      <Route exact path="/about" element={<About mode={mode}/>} />
       <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter your text:" mode={mode} />} />
     </Routes>
   </div>
